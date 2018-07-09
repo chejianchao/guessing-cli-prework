@@ -4,7 +4,8 @@ def exit_game
 end
 
 def run_guessing_game
-  ans = rand
+  ans = rand(6)
+  puts 
   while true
    puts "enter number or exit"
    cmd = gets.chomp
@@ -15,7 +16,7 @@ def run_guessing_game
       puts "You guessed the correct number!"
       break
     else
-      
+      puts "The computer guessed #{ans}."
       break
    end
   end
