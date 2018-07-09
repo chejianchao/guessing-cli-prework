@@ -5,8 +5,14 @@ end
 
 def run_guessing_game
   ans = rand
-  guess = nil
-  while ans != guess
-    guess = gets.to_i
-    
+  while true
+   puts "enter number or exit"
+   cmd = gets.chomp
+   if cmd == "exit"
+     exit_game()
+     break
+    elsif cmd.to_i == ans
+      puts 
+   end
+  end
 end
