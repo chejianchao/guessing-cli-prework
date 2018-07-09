@@ -5,7 +5,8 @@ end
 
 def run_guessing_game
   ans = rand
-  
-  num = rand
-  
+  guess = nil
+  while ans != guess
+    guess = gets.to_i
+    
 end
