@@ -12,12 +12,15 @@ def run_guessing_game
    if cmd == "exit"
      exit_game()
      break
-    elsif cmd.to_i == ans
-      puts "You guessed the correct number!"
-      break
     else
-      puts "The computer guessed #{ans}."
-      break
+      puts "Guess a number between 1 and 6."
+      if cmd.to_i == ans
+        puts "You guessed the correct number!"
+        break
+      else
+        puts "The computer guessed #{ans}."
+        break
+      end
    end
   end
 end
