@@ -12,7 +12,11 @@ def run_guessing_game
      exit_game()
      break
     elsif cmd.to_i == ans
-      puts 
+      puts "You guessed the correct number!"
+      break
+    else
+      
+      break
    end
   end
 end
