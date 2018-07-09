@@ -3,4 +3,9 @@ def exit_game
   puts "Goodbye"
 end
 
-def guess 
+def run_guessing_game
+  ans = rand
+  
+  num = rand
+  
+end
