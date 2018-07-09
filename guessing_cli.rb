@@ -7,7 +7,6 @@ def run_guessing_game
   ans = rand(6)
   
   while true
-   puts "enter number or exit"
    cmd = gets.chomp
    if cmd == "exit"
      exit_game()
